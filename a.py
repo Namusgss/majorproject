@@ -3,7 +3,7 @@ from PIL import Image, ImageTk
 import qrcode
 import os
 
-# sl;dkghs;gfh;dlgh;ldksfgh;lgh
+
 
 # Sample product data
 products = [
