@@ -3,6 +3,8 @@ from PIL import Image, ImageTk
 import qrcode
 import os
 
+# sl;dkghs;gfh;dlgh;ldksfgh;lgh
+
 # Sample product data
 products = [
     {"name": "Drinks", "price": 60, "image": "images/coke.jpeg", "quantity": 1},
