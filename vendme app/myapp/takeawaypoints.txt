@@ -1,0 +1,88 @@
+1>two methods for react native
+a.  without using expo
+b.  using expo
+
+2> while using expo you can encounter problem of app.js/app.tsx not seen inside root.     if app.js is not visible then delete the project
+do not directly run that command 
+
+a) run this instead :
+npm install -g expo-cli
+b) after that run :
+expo init my-new-project
+c) then go to the directory:
+cd my-new-project
+d) and run the project
+
+
+3> The Local Expo CLI was introduced in Expo SDK 46, so it is defined in package.json as
+            "private": true,
+            "resolutions":{
+                "@expo/cli":"xxx"
+            }
+    this solves the problem for the error like "global expo cli has been deprecated"
+
+4> view, button, text are components(like tags in html)
+    a) all the components imported from react native have first letter capital unlike html tags have first letter capital.
+    b) View is not needed for only one text component but necessary for more than one text components
+    c) also we cannot write only in View component it shows error.
+
+5> about jsx. jsx is said as javascript xml but on official website it is said as syntax extention to javascript.
+    a) before jsx we had to made the separate script to write the javascript code and then only we would be able to use it with html code.
+    b)  we can now write html tags and react native components inside javascript 
+
+6> components in react native
+    a)independent and reusable such as function
+    b)two types of components (functional,class based)
+    c)why different component folder is needed?
+
+    function Vs component
+
+7> button and onpress event.    
+    a) mobile application so press not click
+    b) button properties like title,color,onpress.
+    c) passing values to onpress property of button
+    d) also button does not takes styles, above color onPress are not styles but properties. If they need to style then we should include that button inside separate view component
+
+8> state in react native
+    a) basically properties like state,props,components are of react. As react-native is the framework   based on react so, we can use the properties of react as well.
+    b)state vs variables
+    .update on state re-renders the components while update on variables wont.
+    .there is only one state for one component. state of one component cannot be used by other component, which means data of state cannot be shared between the components.
+    .but the name of state can be same for different components.
+
+9> Props in RN 
+    a) props : props are used to send/transfer/share between the components
+    props are like arguements in function.
+    b) State Vs Props.
+
+10> Styles in RN
+    a) types of styles are inline, internal, external, hybrid
+    b) why styles={{}} double braces?
+    so one for objects and another for jsx.
+    c) buttons does not accept styles. If they need to then we should include that button inside separate view component
+
+
+11> TextInput in react native
+    a) this is used to take text input from the users.
+    b) special property onChangeText={(text)=>setName(text)}
+    here default state name is updated by text.
+    c) also for each textinput we can make different state as we can see that in various projects, but we can include all the textinputs in one state as well.
+
+12> Flatlist in RN
+    a) various kind of list that is static or dynamic.
+    b) flatlist may include state with list, or simply variables with list .
+    c) const list= [
+            {},{},{}
+        ]
+    d) also list can be like
+        const list= ['hello', 'hi', 'goodmorning', 'goodevening']
+
+13> class components.
+14> state and props in class components.
+15> Life cycle methods(mounting, changes/updates, unmounting)
+        > lifecycle methods traditionally belongs to class components. However, with the introduction of React Hooks in React 16.8 (2019), lifecycle-like functionality became available for functional components.
+        > hooks are only used in functional component.
+        >useEffect is only used for lifecycle methods in functional component.
+16> show, hide and toggle the component
+17> responsive UI
+18> types of navigator(stack, drawer, tab)
